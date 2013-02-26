@@ -1,7 +1,9 @@
 (ns jane-austen-high-school-massacre.core)
 
-(def high-school (atom {:characters [{:name :emma     :status -1}
-                                     {:name :mr-darcy :status 0}
+
+
+(def high-school (atom {:characters [{:name :emma     :status (rand-nth (range -5 5))}
+                                     {:name :mr-darcy :status (rand-nth (range -5 5))}
                                      {:name :lizzie   :status 3}]}))
 
 (defn update-status [game character change]
