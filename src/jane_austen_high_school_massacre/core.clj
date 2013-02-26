@@ -47,7 +47,7 @@
 
 (defn social-status []
   (if (redrum?)
-    (prn "Everyone hates you! You've been brutally massacred and eaten!")
-    (prn "Your friends are "(clojure.string/join " " friends))))
+    (println "Everyone hates you! You've been brutally massacred and eaten!")
+    (println "Your friends are "(clojure.string/join " " friends))))
   
-(prn "You're at school with :emma, :lizzie and :mr-darcy... use snub, praise, diss and flirt to try to make everyone like you")
+(println "You're at school with :emma, :lizzie and :mr-darcy... use snub, praise, diss and flirt to try to make everyone like you")
